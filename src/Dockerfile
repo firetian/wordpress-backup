@@ -8,7 +8,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir /backups
 
-ENV MYSQL_ENV_MYSQL_HOST mysql
+ENV MYSQL_ENV_MYSQL_HOST mysqlwp
+ENV MYSQL_ENV_MYSQL_USER root
 ENV BACKUP_TIME 0 3 * * *
 
 COPY docker-entrypoint.sh /entrypoint.sh
