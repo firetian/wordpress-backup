@@ -20,3 +20,4 @@ VOLUME /backups
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["cron", "-f"]
+
